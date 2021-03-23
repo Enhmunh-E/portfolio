@@ -1,0 +1,5 @@
+export * from './sidebar/side'
+export * from './skills/skills'
+export * from './home/home'
+export * from './hello/hello'
+export * from './about/about'

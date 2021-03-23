@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import './App.scss'
+import { Home, Side } from './components/index'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container flex flex-row h-100 w-100">
+      <Home />
+      <Side />
     </div>
-  );
+  ); 
 }
-
 export default App;
+// Only Home Side 2 baina
+
+/*
+  Requirements: 
+    About Me
+    Skill ( React, Html, Css, Scss, Js );
+    Blogs ( Blogs )
+    Projects
+    (Firebase)
+    Github-connection
+    Footer
+    Header
+    Animation
+  Bannable things: 
+    Don't get free code from webs
+*/

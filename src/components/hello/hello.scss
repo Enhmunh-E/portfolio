@@ -1,0 +1,22 @@
+.hello {
+    position: relative;
+    .name {
+        text-decoration: underline;
+    }
+    .chevron {
+        position: absolute;
+        animation: slidedown 2s infinite;
+    }
+}
+@keyframes slidedown {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(160%);
+        opacity: 0;
+    }
+}

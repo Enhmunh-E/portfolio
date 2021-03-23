@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;900&display=swap');
+@import './colors.scss' ;
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: #666;
+}
+#root {
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+@each $name, $color in $colors {
+    .c-#{$name} {
+        color: $color;
+    }
+
+    .b-#{$name} {
+        background-color: $color;
+    }
+
+    @for $i from 1 through 10 {
+        .br-#{$name}-#{$i} {
+            border: solid $color $i + px;
+        }
+    }
+}
+@for $i from 1 through 100 {
+    .ppl-#{$i} {
+        padding-left: $i*1%;
+    }
+    .ppr-#{$i} {
+        padding-right: $i*1%;
+    }
+    .ppt-#{$i} {
+        padding-top: $i*1%;
+    }
+    .ppb-#{$i} {
+        padding-bottom: $i*1%;
+    }
+    .vw-#{$i} {
+        width: $i + vw;
+    }
+    .vh-#{$i} {
+        height: $i + vh;
+    }
+    .w-#{$i} {
+        width: $i*1%;
+    }
+    .h-#{$i} {
+        height: $i*1%;
+    }
+    .m-#{$i} {
+        margin: $i + px;
+    }
+    .p-#{$i} {
+        padding: $i + px;
+    }
+    .mx-#{$i} {
+        margin: $i + px 0;
+    }
+    .my-#{$i} {
+        margin: 0 $i + px;
+    }
+    .px-#{$i} {
+        padding: $i + px 0;
+    }
+    .py-#{$i} {
+        padding: 0 $i + px;
+    }
+    .letter-spacing-#{$i} {
+        letter-spacing: $i + px;
+    }
+    .pl-#{$i} {
+        padding-left: $i*1%;
+    }
+    .left-#{$i} {
+        left: $i*1%
+    }
+    .right-#{$i} {
+        right: $i*1%        
+    }
+    .top-#{$i} {
+        top: $i*1%
+    }
+    .bottom-#{$i} {
+        bottom: $i*1%
+    }
+}
+@for $i from 10 through 200 {
+    .fs-#{$i} {
+        font-size: $i + px;
+    }
+    .pr-#{$i} {
+        padding-right: $i + px;
+    }
+}
+.fw-100 {
+    font-weight: 100;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-900 {
+    font-weight: 900;
+}
+.flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-col {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+.text-center {
+    text-align: center;
+}
+.text-underline {
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none;
+}
+.ln-normal {
+    line-height: 1.8em;
+}
