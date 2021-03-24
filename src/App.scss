@@ -32,6 +32,12 @@ html, body {
     }
 }
 @for $i from 1 through 100 {
+    .br-#{$i} {
+        border-radius: $i + px;
+    }
+    .lh-#{$i} {
+        line-height: $i + px;
+    }
     .ppl-#{$i} {
         padding-left: $i*1%;
     }
@@ -62,17 +68,24 @@ html, body {
     .p-#{$i} {
         padding: $i + px;
     }
+    .mt-#{$i} {
+        margin-top: $i + px;
+    }
     .mx-#{$i} {
-        margin: $i + px 0;
+        margin-left: $i + px;
+        margin-right: $i + px;
     }
     .my-#{$i} {
-        margin: 0 $i + px;
+        margin-top: $i + px;
+        margin-bottom: $i + px;
     }
     .px-#{$i} {
-        padding: $i + px 0;
+        padding-right: $i + px;
+        padding-left: $i + px;
     }
     .py-#{$i} {
-        padding: 0 $i + px;
+        padding-top: $i + px;
+        padding-bottom: $i + px;
     }
     .letter-spacing-#{$i} {
         letter-spacing: $i + px;
@@ -141,6 +154,12 @@ p {
 ul {
     list-style-type: none;
 }
-.ln-normal {
+.lh-normal {
     line-height: 1.8em;
+}
+.lh-none {
+    line-height: normal;
+}
+.pointer {
+    cursor: pointer;
 }

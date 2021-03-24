@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hello, Skills, About } from '../index'
+import { Hello, Skills, About, Projects, Blog } from '../index'
 import './home.scss'
 export const Home = () => {
     return (
@@ -7,6 +7,8 @@ export const Home = () => {
             <Hello />
             <About />
             <Skills />
+            <Projects />
+            <Blog />
         </div>
     );
 }
