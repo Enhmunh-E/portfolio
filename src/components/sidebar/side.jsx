@@ -10,12 +10,12 @@ export const Side = () => {
             </p>
             <p className="text-center text-underline letter-spacing-2 fw-700">Enkhmunkh</p>
             <ul className="things">
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li className="pointer">Home</li>
+                <li className="pointer">About</li>
+                <li className="pointer">Skills</li>
+                <li className="pointer">Projects</li>
+                <li className="pointer">Blog</li>
+                <li className="pointer">Contact</li>
             </ul>
         </div>
     );

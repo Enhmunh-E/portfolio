@@ -10,6 +10,9 @@ html, body {
     font-size: 16px;
     color: #666;
 }
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
 #root {
     height: 100%;
 }
@@ -32,6 +35,9 @@ html, body {
     }
 }
 @for $i from 1 through 100 {
+    .mp-#{$i} {
+        margin: $i*1%;
+    }
     .br-#{$i} {
         border-radius: $i + px;
     }
@@ -105,6 +111,18 @@ html, body {
     .bottom-#{$i} {
         bottom: $i*1%
     }
+    .mr-#{$i} {
+        margin-right: $i + px;
+    }
+    .ml-#{$i} {
+        margin-left: $i + px;
+    }
+    .mt-#{$i} {
+        margin-top: $i + px;
+    }
+    .mb-#{$i} {
+        margin-bottom: $i + px;
+    }
 }
 @for $i from 10 through 200 {
     .fs-#{$i} {
@@ -141,6 +159,15 @@ html, body {
 .justify-center {
     justify-content: center;
 }
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
 p {
     padding: 0;
     margin: 0;
@@ -162,4 +189,7 @@ ul {
 }
 .pointer {
     cursor: pointer;
+}
+.br-none {
+    border: none;
 }
