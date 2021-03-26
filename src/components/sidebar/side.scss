@@ -4,3 +4,20 @@
         padding: 8px;
     }
 }
+.side {
+    transition: 1s;
+}
+.zero {
+    width: 0px;
+}
+@media only screen and (max-width: 2300px) {
+    .things {
+        padding-left: 20px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .side {
+        // display: none;
+        // width: 0;
+    }
+}

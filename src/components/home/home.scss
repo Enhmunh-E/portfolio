@@ -6,3 +6,9 @@
 .home::-webkit-scrollbar {
     display: none;
 }
+// @media only screen and (max-width: ) 
+@media only screen and (max-width: 1000px) {
+    .home {
+        width: 100vw;
+    }
+}

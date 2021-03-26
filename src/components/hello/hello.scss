@@ -20,3 +20,13 @@
         opacity: 0;
     }
 }
+@media only screen and (max-width: 1400px) {
+    .hello-text {
+        font-size: 100px;
+    }
+}
+@media only screen and (max-width: 1130px) {
+    .hello-text {
+        font-size: 80px;
+    }
+}

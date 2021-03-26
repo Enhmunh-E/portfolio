@@ -29,7 +29,7 @@ export const Skills = () => {
         },
     ]
     return (
-        <div className="skills c-default fs-20 pl-30 lh-normal">
+        <div className="skills c-default fs-20 pl-30 lh-normal my-50">
             <p className="fw-700 fs-35 py-20">Skills</p>
             <p className="py-20">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit aperiam, ab cum et dolore libero. </p>
             <div className="skill-container">

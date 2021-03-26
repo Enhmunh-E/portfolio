@@ -34,7 +34,13 @@ html, body {
         }
     }
 }
-@for $i from 1 through 100 {
+@for $i from 1 through 800 {
+    .wp-#{$i} {
+        width: $i + px;
+    }
+    .hp-#{$i} {
+        height: $i + px;
+    }
     .mp-#{$i} {
         margin: $i*1%;
     }
@@ -192,4 +198,19 @@ ul {
 }
 .br-none {
     border: none;
+}
+.opacity-6 {
+    opacity: 0.6;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.h-auto {
+    height: auto;
+}
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
 }

@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss'
 import { Home, Side } from './components/index'
 const App = () => {
+  const [nav, setNav] = useState(false);
   return (
     <div className="container flex flex-row h-100 w-100">
-      <Home />
-      <Side />
+      <Home nav={nav} setNav={setNav}/>
+      <Side nav={nav}/>
     </div>
   ); 
 }
