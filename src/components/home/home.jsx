@@ -1,11 +1,11 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useContext } from 'react'
+import { Context } from '../../providers/provider';
 import { Hello, Skills, About, Projects, Blog, Contact } from '../index'
 import './home.scss'
-export const Home = (props) => {
-    const {  setPageNumber, helloRef, aboutRef, skillsRef, projectsRef, blogRef, contactRef } = props;
+export const Home = () => {
+    const { setPageNumber, helloRef, aboutRef, skillsRef, projectsRef, blogRef, contactRef } = useContext(Context);
     const containerRef = useRef(null);
     const scrolling = () => {
-        console.log(helloRef)
         console.log(containerRef.current.clientHeight);
         var bottom_of_screen = containerRef.current.scrollTop + containerRef.current.clientHeight;
         var top_of_screen = containerRef.current.scrollTop;

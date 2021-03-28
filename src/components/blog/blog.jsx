@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { Context } from '../../providers/provider';
 import './blog.scss'
-export const Blog = ({ ref }) => {
+export const Blog = () => {
+    const { blogRef } = useContext(Context);
     const blogs = [
         {
             title: "Test title",
@@ -25,7 +27,7 @@ export const Blog = ({ ref }) => {
     ];
     const [more, setMore] = useState(false);
     return (
-        <div className="blog c-default fs-20 pl-30 lh-normal my-50" ref={ref}>
+        <div className="blog c-default fs-20 pl-30 lh-normal my-50" ref={blogRef}>
             <div className="flex flex-row justify-between">
                 <p className="fw-700 fs-35 py-20 mt-20">Blog</p>  
                 <p className="text-center pointer fs-16 mb-20 mt-40 c-tertiary" onClick={() => setMore(!more)}>View All</p>

@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../providers/provider'
 import './skills.scss'
-export const Skills = ({ ref }) => {
+export const Skills = () => {
+    const { skillsRef } = useContext(Context);
     const skills = [
         {
             name: "React JS",
@@ -29,7 +31,7 @@ export const Skills = ({ ref }) => {
         },
     ]
     return (
-        <div className="skills c-default fs-20 pl-30 lh-normal my-50" ref={ref}>
+        <div className="skills c-default fs-20 pl-30 lh-normal my-50" ref={skillsRef}>
             <p className="fw-700 fs-35 py-20">Skills</p>
             <p className="py-20">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit aperiam, ab cum et dolore libero. </p>
             <div className="skill-container">

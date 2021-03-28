@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../providers/provider';
 import './side.scss'
-export const Side = (props) => {
-    const { nav } = props;
+export const Side = () => {
+    const { nav } = useContext(Context);
     return (
         <div className={`side b-primary vw-30 c-default fs-20 ${nav ? "" : "zero"}`}>
             <p className="flex w-100 align-center justify-center p-50 fw-700">

@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { Context } from '../../providers/provider';
 import './contact.scss'
 import sendimg from './send.png'
-export const Contact = ({ ref }) => {
+export const Contact = () => {
     const [inputs, setInputs] = useState({});
+    const { blogRef } = useContext(Context);
     const handler = (e) => {
         setInputs({ ...inputs, [e.target.id]: e.target.value });
         console.log(inputs);
@@ -11,7 +13,7 @@ export const Contact = ({ ref }) => {
 
     }
     return (
-        <div className="c-default fs-20 pl-30 lh-normal flex flex-col my-50" ref={ref}>
+        <div className="c-default fs-20 pl-30 lh-normal flex flex-col my-50" ref={blogRef}>
             <p className="fw-700 fs-35 py-20">Contact me</p>
             <div className="flex flex-row">
                 <input className="my-10 br-none b-primary raleway w-50 mr-10 fs-20" type="text" id="name" placeholder="Your Name" onChange={(e) => handler(e)}/>

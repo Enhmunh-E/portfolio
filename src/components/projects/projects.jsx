@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './projects.scss'
 import chain from './chain.png'
-export const Projects = ({ ref }) => {
+import { Context } from '../../providers/provider'
+export const Projects = () => {
+    const { projectsRef } = useContext(Context);
     const [more, setMore] = useState(false);
     const sliderInformation = [
         {
@@ -34,7 +36,7 @@ export const Projects = ({ ref }) => {
     //     }
     // ]
     return (
-        <div className="projects c-default fs-20 pl-30 lh-normal my-50" ref={ref}>
+        <div className="projects c-default fs-20 pl-30 lh-normal my-50" ref={projectsRef}>
             <div className="flex flex-row justify-between">
                 <p className="fw-700 fs-35 py-20 mt-20">Projects</p>  
                 <p className="text-center pointer fs-16 mb-20 mt-40 c-tertiary" onClick={() => setMore(!more)}>View All</p>

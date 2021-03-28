@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../providers/provider';
 import './about.scss'
-export const About = ({ ref }) => {
+export const About = () => {
+    const { aboutRef } = useContext(Context);
     return (
-        <div className="about c-default fs-20 pl-30 lh-normal" ref={ref}>
+        <div className="about c-default fs-20 pl-30 lh-normal" ref={aboutRef}>
             <p className="fw-700 fs-35 py-20">About</p>
             <p className="py-20">Hi I'm Enkhmunkh a programming student of Nest Academy and 11th grader.</p>
             <p className="py-20">I love building some stuffs with knowledge that I earnt from learning. Because it's like magic and for me you can make another world with coding.</p>

@@ -1,15 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useContext } from 'react';
 import './App.scss'
 import { Home, Side, Nav } from './components/index'
+import { Context } from './providers/provider';
 const App = () => {
-  const [nav, setNav] = useState(false);
-  const [pageNumber, setPageNumber] = useState(0);
-  const helloRef = useRef();
-  const aboutRef = useRef();
-  const skillsRef = useRef();
-  const projectsRef = useRef();
-  const blogRef = useRef();
-  const contactRef = useRef();  
+  const { setNav } = useContext(Context);
   useEffect(() => {
     var w = window.innerWidth;
     if (w > 1000) {
@@ -18,9 +12,9 @@ const App = () => {
   }, []);
   return (
     <div className="container flex flex-row h-100 w-100 relative">
-      <Nav nav={nav} setNav={setNav} />
-      <Home nav={nav} setNav={setNav} setPageNumber={setPageNumber} helloRef={helloRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} blogRef={blogRef} contactRef={contactRef}/>
-      <Side nav={nav} pageNumber={pageNumber} />
+      <Nav />
+      <Home />
+      <Side />
     </div>
   ); 
 }
