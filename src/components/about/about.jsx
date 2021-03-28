@@ -1,8 +1,8 @@
 import React from 'react'
 import './about.scss'
-export const About = () => {
+export const About = ({ ref }) => {
     return (
-        <div className="about c-default fs-20 pl-30 lh-normal">
+        <div className="about c-default fs-20 pl-30 lh-normal" ref={ref}>
             <p className="fw-700 fs-35 py-20">About</p>
             <p className="py-20">Hi I'm Enkhmunkh a programming student of Nest Academy and 11th grader.</p>
             <p className="py-20">I love building some stuffs with knowledge that I earnt from learning. Because it's like magic and for me you can make another world with coding.</p>

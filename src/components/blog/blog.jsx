@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './blog.scss'
-export const Blog = () => {
+export const Blog = ({ ref }) => {
     const blogs = [
         {
             title: "Test title",
@@ -25,7 +25,7 @@ export const Blog = () => {
     ];
     const [more, setMore] = useState(false);
     return (
-        <div className="blog c-default fs-20 pl-30 lh-normal my-50">
+        <div className="blog c-default fs-20 pl-30 lh-normal my-50" ref={ref}>
             <div className="flex flex-row justify-between">
                 <p className="fw-700 fs-35 py-20 mt-20">Blog</p>  
                 <p className="text-center pointer fs-16 mb-20 mt-40 c-tertiary" onClick={() => setMore(!more)}>View All</p>
@@ -35,7 +35,7 @@ export const Blog = () => {
                     blogs.map((blog) => {
                         return (
                             <>
-                            <div className="w-100 flex flex-row my-10   ">
+                            <div className="w-100 flex flex-row my-10 flex-wrap">
                                 <div className="pr-20">
                                     <img src={blog.imgUrl} alt={blog.title} height="180px" width="246px"/>
                                 </div>

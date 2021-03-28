@@ -1,6 +1,6 @@
 import React from 'react'
 import './skills.scss'
-export const Skills = () => {
+export const Skills = ({ ref }) => {
     const skills = [
         {
             name: "React JS",
@@ -29,7 +29,7 @@ export const Skills = () => {
         },
     ]
     return (
-        <div className="skills c-default fs-20 pl-30 lh-normal my-50">
+        <div className="skills c-default fs-20 pl-30 lh-normal my-50" ref={ref}>
             <p className="fw-700 fs-35 py-20">Skills</p>
             <p className="py-20">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit aperiam, ab cum et dolore libero. </p>
             <div className="skill-container">

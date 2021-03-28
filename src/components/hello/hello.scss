@@ -7,6 +7,9 @@
         position: absolute;
         animation: slidedown 2s infinite;
     }
+    // .hello-text {
+    //     padding: 0;
+    // }
 }
 @keyframes slidedown {
     0% {
@@ -28,5 +31,18 @@
 @media only screen and (max-width: 1130px) {
     .hello-text {
         font-size: 80px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .hello-text {
+        padding-top: 30vh !important;
+        font-size: 50px;
+        padding: 0;
+    }
+    .hello {
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        padding: 20%;
     }
 }

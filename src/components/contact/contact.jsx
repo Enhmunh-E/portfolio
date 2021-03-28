@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './contact.scss'
 import sendimg from './send.png'
-export const Contact = () => {
+export const Contact = ({ ref }) => {
     const [inputs, setInputs] = useState({});
     const handler = (e) => {
         setInputs({ ...inputs, [e.target.id]: e.target.value });
@@ -11,7 +11,7 @@ export const Contact = () => {
 
     }
     return (
-        <div className="c-default fs-20 pl-30 lh-normal flex flex-col my-50">
+        <div className="c-default fs-20 pl-30 lh-normal flex flex-col my-50" ref={ref}>
             <p className="fw-700 fs-35 py-20">Contact me</p>
             <div className="flex flex-row">
                 <input className="my-10 br-none b-primary raleway w-50 mr-10 fs-20" type="text" id="name" placeholder="Your Name" onChange={(e) => handler(e)}/>
