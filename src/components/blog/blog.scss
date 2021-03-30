@@ -1,0 +1,8 @@
+.blog-item {
+
+}
+@media only screen and (max-width: 700px) {
+    .blog-item {
+        flex-wrap: wrap;
+    }
+}

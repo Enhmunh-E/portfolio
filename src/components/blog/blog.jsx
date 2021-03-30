@@ -37,7 +37,7 @@ export const Blog = () => {
                     blogs.map((blog) => {
                         return (
                             <>
-                            <div className="w-100 flex flex-row my-10 flex-wrap">
+                            <div className="w-100 flex flex-row my-10 blog-item">
                                 <div className="pr-20">
                                     <img src={blog.imgUrl} alt={blog.title} height="180px" width="246px"/>
                                 </div>

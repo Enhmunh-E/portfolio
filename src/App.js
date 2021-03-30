@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import './App.scss'
 import { Home, Side, Nav } from './components/index'
-import { Context } from './providers/provider';
+import { Context, Provider } from './providers/provider';
 const App = () => {
   const { setNav } = useContext(Context);
   useEffect(() => {
@@ -11,11 +11,13 @@ const App = () => {
     }
   }, []);
   return (
-    <div className="container flex flex-row h-100 w-100 relative">
-      <Nav />
-      <Home />
-      <Side />
-    </div>
+    <Provider>
+      <div className="container flex flex-row h-100 w-100 relative">
+        <Nav />
+        <Home />
+        <Side />
+      </div>
+    </Provider>
   ); 
 }
 export default App;

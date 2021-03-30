@@ -8,7 +8,7 @@ export const Side = () => {
             <p className="flex w-100 align-center justify-center p-50 fw-700">
                 <p className="c-tertiary py-5">0</p>
                 /
-                <p className="py-5">0</p>
+                <p className="py-5">6</p>
             </p>
             <p className="text-center text-underline letter-spacing-2 fw-700 w-100">Enkhmunkh</p>
             <ul className="things">
