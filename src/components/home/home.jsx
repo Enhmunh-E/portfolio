@@ -7,15 +7,15 @@ export const Home = () => {
     const containerRef = useRef(null);
     const scrolling = () => {
         console.log(containerRef.current.clientHeight);
-        var bottom_of_screen = containerRef.current.scrollTop + containerRef.current.clientHeight;
-        var top_of_screen = containerRef.current.scrollTop;
-        console.log(bottom_of_screen, top_of_screen)
-        changePage( helloRef, bottom_of_screen, top_of_screen, 1 );
-        changePage( aboutRef, bottom_of_screen, top_of_screen, 2 );
-        changePage( skillsRef, bottom_of_screen, top_of_screen, 3 );
-        changePage( projectsRef, bottom_of_screen, top_of_screen, 4 );
-        changePage( blogRef, bottom_of_screen, top_of_screen, 5 );
-        changePage( contactRef, bottom_of_screen, top_of_screen, 6 );
+        // var bottom_of_screen = containerRef.current.scrollTop + containerRef.current.clientHeight;
+        // var top_of_screen = containerRef.current.scrollTop;
+        // console.log(bottom_of_screen, top_of_screen)
+        // changePage( helloRef, bottom_of_screen, top_of_screen, 1 );
+        // changePage( aboutRef, bottom_of_screen, top_of_screen, 2 );
+        // changePage( skillsRef, bottom_of_screen, top_of_screen, 3 );
+        // changePage( projectsRef, bottom_of_screen, top_of_screen, 4 );
+        // changePage( blogRef, bottom_of_screen, top_of_screen, 5 );
+        // changePage( contactRef, bottom_of_screen, top_of_screen, 6 );
     }
     const changePage = ( reference, bottom_of_screen, top_of_screen, id ) => {
         var top_of_element = reference.current.offset.top;

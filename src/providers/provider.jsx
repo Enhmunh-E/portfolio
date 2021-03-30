@@ -8,12 +8,12 @@ export const Context = createContext({
     projectsRef: null,
     blogRef: null,
     contactRef: null,
-    nav: false,
+    nav: true,
     setPageNumber: () => {},
     setNav: () => {}
 })
 export const Provider = ({ children }) => {
-    const [nav, setNav] = useState(false);
+    const [nav, setNav] = useState(true);
     const [pageNumber, setPageNumber] = useState(0);
     const helloRef = useRef(null);
     const aboutRef = useRef(null);
