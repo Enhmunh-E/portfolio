@@ -1,11 +1,14 @@
+type Skill = {
+  name: string;
+  source: string;
+};
+
 type skillsType = {
   level: string;
-  skills: {
-    name: string;
-    source: string;
-  }[];
-}[];
-export const skills: skillsType = [
+  skills: Skill[];
+};
+
+export const skills: skillsType[] = [
   {
     level: "Expert",
     skills: [
@@ -17,7 +20,6 @@ export const skills: skillsType = [
         name: "Typescript",
         source: "assets/expert/typescript.svg",
       },
-      ,
       {
         name: "GatsbyJS",
         source: "assets/expert/gatsbyJs.svg",

@@ -4,7 +4,7 @@ import { LocomotiveProvider } from "@/contexts";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export const Home = () => {
+const MyApp = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mousePosition, setMousePosition] = useState<number[] | null>(null);
   useEffect(() => {
@@ -63,4 +63,4 @@ export const Home = () => {
   );
 };
 
-export default Home;
+export default MyApp;

@@ -1,6 +1,11 @@
 import { skills } from "@/assets";
 import Image from "next/image";
 
+type SkillType = {
+  name: string;
+  source: string;
+};
+
 export const AboutMe = () => {
   return (
     <div
@@ -92,32 +97,27 @@ export const AboutMe = () => {
               <div className="flex flex-col gap-4" key={index}>
                 <div className="text-secondary text-2xl">{level} in:</div>
                 <div className="flex flex-row flex-wrap gap-4">
-                  {skills.map(
-                    (
-                      { name, source }: { name: string; source: string },
-                      index2: number
-                    ) => (
+                  {skills.map((skill: SkillType, index2: number) => (
+                    <div
+                      className="flex flex-col gap-2 items-center"
+                      key={index2}
+                    >
                       <div
-                        className="flex flex-col gap-2 items-center"
-                        key={index2}
+                        className="w-12 h-12 flex items-center justify-center rounded-full"
+                        style={{
+                          border: "1px solid rgba(255, 255, 255, 0.1)",
+                        }}
                       >
-                        <div
-                          className="w-12 h-12 flex items-center justify-center rounded-full"
-                          style={{
-                            border: "1px solid rgba(255, 255, 255, 0.1)",
-                          }}
-                        >
-                          <Image
-                            src={source}
-                            width={32}
-                            height={32}
-                            alt={name}
-                          />
-                        </div>
-                        <div className=" text-xs">{name}</div>
+                        <Image
+                          src={skill.source}
+                          width={32}
+                          height={32}
+                          alt={skill.name}
+                        />
                       </div>
-                    )
-                  )}
+                      <div className=" text-xs">{skill.name}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
