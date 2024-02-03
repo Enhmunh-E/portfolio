@@ -2,14 +2,14 @@ export const Intro = () => {
   return (
     <div data-scroll-section>
       <div
-        className="flex flex-row"
+        className="flex flex-col-reverse md:flex-row"
         style={{
           height: "80vh",
           width: "100vw",
           left: 0,
         }}
       >
-        <div className="w-2/3 bg-primary flex flex-col justify-center  container-left-gap gap-4">
+        <div className="bg-primary flex flex-col justify-center  container-left-gap gap-4 w-full h-2/3 md:w-2/3 md:h-full">
           <div
             className="text-secondary"
             style={{
@@ -41,8 +41,8 @@ export const Intro = () => {
             <span className="text-primary"> development.</span>
           </div>
         </div>
-        <div className="w-1/3 bg-secondary relative">
-          <div className=" w-80  h-80 aspect-square bg-white absolute top-1/2 -translate-y-1/2 -translate-x-1/2 relative">
+        <div className="bg-secondary relative w-full h-1/3 md:w-1/3 md: h-full">
+          <div className=" w-80  h-80 aspect-square bg-white relative translate-y-1/2 md:top-1/2 md:-translate-y-1/2 md:-translate-x-1/2 ">
             <img
               className="w-80 h-80 object-cover object-top absolute z-10"
               src="/assets/me.JPG"

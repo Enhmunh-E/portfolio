@@ -116,11 +116,10 @@ const Project = ({ source, title, purpose, desc, index }: ProjectType) => {
       <div
         className="w-2/3"
         style={{
-          backgroundImage: `url(${source})`,
-          backgroundSize: "cover",
+          position: "relative",
         }}
       >
-        {/* <Image src={source} alt={title} layout="fill" objectFit="cover" /> */}
+        <Image src={source} alt={title} layout="fill" objectFit="cover" />
       </div>
     </div>
   );

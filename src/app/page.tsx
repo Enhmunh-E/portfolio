@@ -51,7 +51,7 @@ const MyApp = () => {
                 width={188}
                 alt="logo"
               />
-              <NavButton />
+              {/* <NavButton /> */}
             </div>
           </div>
           <Intro />
