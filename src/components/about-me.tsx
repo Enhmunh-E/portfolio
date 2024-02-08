@@ -1,4 +1,5 @@
 import { skills } from "@/assets";
+import { useWindowSize } from "@/hooks";
 import Image from "next/image";
 
 type SkillType = {
@@ -7,22 +8,21 @@ type SkillType = {
 };
 
 export const AboutMe = () => {
+  const { isMobile } = useWindowSize();
   return (
     <div
       // style={{
       //   height: "100vh",
       // }}
       data-scroll-section
-      className="container-left-gap container-right-gap py-24"
+      className="container-left-gap container-right-gap py-24 "
     >
       <div
-        data-scroll
-        data-scroll-speed="2"
-        className="text-secondary flex flex-row pb-8"
+        // data-scroll
+        // data-scroll-speed="2"
+        className="text-secondary flex flex-row pb-4 lg:pb-8 text-2xl font-bold px-4 md:px-0 lg:text-5xl"
         style={{
-          fontSize: "48px",
           fontFamily: "Inter",
-          fontWeight: "700",
           gap: 6,
         }}
       >
@@ -32,7 +32,11 @@ export const AboutMe = () => {
           <span className="text-primary">{`.`}</span>
         </span>
       </div>
-      <div data-scroll data-scroll-speed="2" className="flex flex-row">
+      <div
+        data-scroll
+        data-scroll-speed={isMobile ? "1" : "2"}
+        className="flex flex-col gap-6 px-4 md:px-0 lg:flex-row lg:gap-0"
+      >
         <ul className="flex flex-1 flex-col">
           <ListItem
             year="2023 - Present"
@@ -95,29 +99,66 @@ export const AboutMe = () => {
           <div className="text-secondary flex flex-col text-xl gap-8">
             {skills.map(({ level, skills }, index) => (
               <div className="flex flex-col gap-4" key={index}>
-                <div className="text-secondary text-2xl">{level} in:</div>
-                <div className="flex flex-row flex-wrap gap-4">
-                  {skills.map((skill: SkillType, index2: number) => (
+                <div className="text-secondary text-xl lg:text-2xl">
+                  {level} in:
+                </div>
+                <div className="flex flex-row gap-4">
+                  <div className={isMobile && index == 0 ? "logos-slide" : ""}>
                     <div
-                      className="flex flex-col gap-2 items-center"
-                      key={index2}
+                      className={`flex flex-row gap-4 ${
+                        isMobile ? "" : "flex-wrap"
+                      }`}
                     >
-                      <div
-                        className="w-12 h-12 flex items-center justify-center rounded-full"
-                        style={{
-                          border: "1px solid rgba(255, 255, 255, 0.1)",
-                        }}
-                      >
-                        <Image
-                          src={skill.source}
-                          width={32}
-                          height={32}
-                          alt={skill.name}
-                        />
-                      </div>
-                      <div className=" text-xs">{skill.name}</div>
+                      {skills.map((skill: SkillType, index2: number) => (
+                        <div
+                          className="flex flex-col gap-2 items-center"
+                          key={index2}
+                        >
+                          <div
+                            className="w-12 h-12 flex items-center justify-center rounded-full"
+                            style={{
+                              border: "1px solid rgba(255, 255, 255, 0.1)",
+                            }}
+                          >
+                            <Image
+                              src={skill.source}
+                              width={32}
+                              height={32}
+                              alt={skill.name}
+                            />
+                          </div>
+                          <div className=" text-xs">{skill.name}</div>
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
+                  {isMobile && index == 0 && (
+                    <div className="logos-slide">
+                      <div className="flex flex-row gap-4">
+                        {skills.map((skill: SkillType, index2: number) => (
+                          <div
+                            className="flex flex-col gap-2 items-center"
+                            key={index2}
+                          >
+                            <div
+                              className="w-12 h-12 flex items-center justify-center rounded-full"
+                              style={{
+                                border: "1px solid rgba(255, 255, 255, 0.1)",
+                              }}
+                            >
+                              <Image
+                                src={skill.source}
+                                width={32}
+                                height={32}
+                                alt={skill.name}
+                              />
+                            </div>
+                            <div className="text-xs">{skill.name}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

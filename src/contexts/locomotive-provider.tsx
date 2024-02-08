@@ -35,9 +35,9 @@ export const LocomotiveProvider = ({
       <LocomotiveScrollProvider
         options={{
           smooth: true,
-          multiplier: 0.5,
+          multiplier: 1,
           smartphone: {
-            smooth: false,
+            smooth: true,
           },
         }}
         onLocationChange={(scroll: any) =>
