@@ -5,7 +5,7 @@ export const Footer = () => {
       className="container-left-gap flex  items-center justify-center container-right-gap  relative pb-4"
     >
       <div className="font-inter text-quaternary">
-        © 2023 Enkhmunkh. All rights reserved
+        © 2024 Enkhmunkh. All rights reserved
       </div>
     </div>
   );
