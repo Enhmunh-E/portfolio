@@ -64,7 +64,7 @@ export const AboutMe = () => {
               {
                 position: "Co-Founder & CTO",
                 organization: "Tuuri.mn",
-                type: "Voluteer",
+                type: "Volunteer",
               },
               {
                 position: "...",
@@ -80,12 +80,12 @@ export const AboutMe = () => {
               {
                 position: "Instructor",
                 organization: "Nest Academy",
-                type: "Voluteer",
+                type: "Volunteer",
               },
               {
                 position: "Co-Founder & Lead Developer",
                 organization: "Vici. Mag",
-                type: "Voluteer",
+                type: "Volunteer",
               },
               {
                 position: "...",
