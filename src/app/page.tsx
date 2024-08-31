@@ -14,14 +14,14 @@ import { useEffect, useState } from "react";
 
 const MyApp = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mousePosition, setMousePosition] = useState<number[] | null>(null);
-  useEffect(() => {
-    const mousePositionChange = (e: MouseEvent) => {
-      setMousePosition([Number(e.clientX), Number(e.clientY)]);
-    };
-    window.addEventListener("mousemove", mousePositionChange);
-    return () => window.removeEventListener("mousemove", mousePositionChange);
-  }, []);
+  // const [mousePosition, setMousePosition] = useState<number[] | null>(null);
+  // useEffect(() => {
+  //   const mousePositionChange = (e: MouseEvent) => {
+  //     setMousePosition([Number(e.clientX), Number(e.clientY)]);
+  //   };
+  //   window.addEventListener("mousemove", mousePositionChange);
+  //   return () => window.removeEventListener("mousemove", mousePositionChange);
+  // }, []);
   return (
     <LocomotiveProvider setIsScrolled={setIsScrolled}>
       <div data-scroll-container className="bg-default">

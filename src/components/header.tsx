@@ -1,6 +1,7 @@
 import { useWindowSize } from "@/hooks";
 import Image from "next/image";
 import Button from "./button";
+import Link from "next/link";
 export const Header = ({ isScrolled }: { isScrolled: boolean }) => {
   const { isDesktop } = useWindowSize();
   return (
@@ -28,15 +29,23 @@ export const Header = ({ isScrolled }: { isScrolled: boolean }) => {
           transition: "all 500ms",
         }}
       >
-        <Image
-          src="assets/title.svg"
-          height={isDesktop ? 53 : 16}
-          width={isDesktop ? 188 : 95.33}
-          alt="logo"
-        />
-        <a href="/Enkhmunkh-Resume.pdf">
-          <Button>Download Resume</Button>
-        </a>
+        <Link href={"/"}>
+          <Image
+            src="assets/title.svg"
+            height={isDesktop ? 53 : 16}
+            width={isDesktop ? 188 : 95.33}
+            alt="logo"
+          />
+        </Link>
+
+        <div className="flex items-center justify-between gap-4">
+          <Link href="/blogs">
+            <Button>Blogs</Button>
+          </Link>
+          <a href="/Enkhmunkh-Resume.pdf">
+            <Button>Download Resume</Button>
+          </a>
+        </div>
       </div>
     </div>
   );
