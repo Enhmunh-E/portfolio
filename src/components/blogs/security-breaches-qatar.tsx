@@ -46,7 +46,7 @@ export const SecurityBreachesQatar = () => {
           anyone else had the access they could see the location of everyone
           with their personal information (AFP, 2020).
         </p>
-        <p className="font-semibold">References:</p>
+        <p className="font-semibold pt-4">References:</p>
         <ul className=" leading-8">
           <li>
             Jennifer, A. (2016, April 28). Hackers target Qatar National Bank
