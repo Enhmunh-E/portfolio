@@ -5,18 +5,32 @@ export const ContactMe = () => {
     {
       icon: "assets/contact/facebook.svg",
       link: "https://www.facebook.com/enhuush.enhmunh",
+      width: 32,
+      height: 32,
     },
     {
       icon: "assets/contact/instagram.svg",
       link: "https://www.instagram.com/emu_ee/",
+      width: 32,
+      height: 32,
     },
     {
       icon: "assets/contact/github.svg",
       link: "https://github.com/Enhmunh-E",
+      width: 32,
+      height: 32,
     },
     {
       icon: "assets/contact/linkedin.svg",
       link: "https://www.linkedin.com/in/enkhmunkh-enkhbayar-32312022b",
+      width: 32,
+      height: 32,
+    },
+    {
+      icon: "assets/contact/leetcode.svg",
+      link: "https://leetcode.com/u/Enhmunh/",
+      width: 27.39,
+      height: 32,
     },
   ];
   return (
@@ -27,7 +41,7 @@ export const ContactMe = () => {
       <div className="px-4  pb-8 flex flex-col justify-center items-center">
         <Title>Contact Me</Title>
         <div className="flex flex-row gap-4 justify-center pt-9">
-          {contacts.map(({ icon, link }) => (
+          {contacts.map(({ icon, link, width, height }) => (
             <a
               className="w-12 h-12 flex items-center justify-center rounded-full"
               style={{
@@ -36,7 +50,7 @@ export const ContactMe = () => {
               href={link}
               key={link}
             >
-              <Image src={icon} width={32} height={32} alt={link} />
+              <Image src={icon} width={width} height={height} alt={link} />
             </a>
           ))}
         </div>
