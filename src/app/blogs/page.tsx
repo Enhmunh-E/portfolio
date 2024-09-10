@@ -1,5 +1,10 @@
 "use client";
-import { Header, RandyPausch, SecurityBreachesQatar } from "@/components";
+import {
+  Header,
+  ProgrammingLanguages,
+  RandyPausch,
+  SecurityBreachesQatar,
+} from "@/components";
 import { LocomotiveProvider } from "@/contexts";
 import Link from "next/link";
 import { useState } from "react";
@@ -27,6 +32,7 @@ const Blogs = () => {
             >
               <h1>Blogs</h1>
             </div>
+            <ProgrammingLanguages />
             <SecurityBreachesQatar />
             <RandyPausch />
           </div>
