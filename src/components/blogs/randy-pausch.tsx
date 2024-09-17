@@ -16,20 +16,20 @@ export const RandyPausch = () => {
         </h2>
         <div className="text-quaternary opacity-50">2024/8/30</div>
       </div>
-      <div className="pl-8 pt-4 opacity-70 font-normal flex flex-col gap-2">
-        <p>
+      <div className="pl-8 pt-4 font-normal flex flex-col gap-2">
+        <p className="opacity-70">
           Randy Pausch was a Professor of Computer Science at Carnegie Mellon
           University. Known for having had pancreatic cancer he became popular
           through his lectures.
         </p>
-        <p>
+        <p className="opacity-70">
           Watching his lecture about Time Management, I was inspired by him and
           learned a lot about time management.
         </p>
-        <p className="text-primary">
+        <p className="text-primary opacity-70">
           Five points he said that I liked in his talk:
         </p>
-        <ul className="list-disc pl-4">
+        <ul className="list-disc pl-4 opacity-70">
           <li>
             You don’t find time for important things, you make it. And you make
             it, by electing not to do something else.
@@ -49,6 +49,15 @@ export const RandyPausch = () => {
           <li>
             Time is all we have, and you may find one day, you have less than
             you think
+          </li>
+        </ul>
+        <p className="font-semibold pt-4">References:</p>
+        <ul className=" leading-8">
+          <li>Pausch, R. (2008, February 7). Time management</li>
+          <li>
+            <a className="underline" href="https://youtu.be/oTugjssqOT0">
+              https://youtu.be/oTugjssqOT0
+            </a>
           </li>
         </ul>
       </div>
