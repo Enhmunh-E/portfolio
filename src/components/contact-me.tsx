@@ -79,6 +79,18 @@ export const ContactMe = () => {
         >
           Check Out My Calendar
         </Link>
+        <div className="text-secondary font-oswald text-base text-center py-4">
+          and
+        </div>
+        <Link
+          className="py-3 px-4 w-44 font-raleway text-center font-normal text-base border border-white text-secondary lg:text-base hover:bg-white hover:text-black"
+          style={{
+            filter: "drop-shadow(-4px 4px 0px rgba(255, 255, 255, 0.25))",
+          }}
+          href={"/courseplan"}
+        >
+          Course Plan
+        </Link>
       </div>
     </div>
   );
