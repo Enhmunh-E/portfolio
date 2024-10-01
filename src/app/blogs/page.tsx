@@ -5,6 +5,7 @@ import {
   ProgrammingLanguages,
   RandyPausch,
   SecurityBreachesQatar,
+  SoftwareEngineering,
   TheoryOfComputation,
 } from "@/components";
 import { LocomotiveProvider } from "@/contexts";
@@ -34,6 +35,7 @@ const Blogs = () => {
             >
               <h1>Blogs</h1>
             </div>
+            <SoftwareEngineering />
             <TheoryOfComputation />
             <CloudComputing />
             <ProgrammingLanguages />
