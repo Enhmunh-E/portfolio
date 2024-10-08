@@ -73,6 +73,17 @@ export const ProgrammingLanguages = () => {
             </Link>
           </li>
         </ul>
+        <p className="font-semibold pt-4">Read More:</p>
+        <ul className=" leading-8">
+          <li>
+            <Link
+              className="underline"
+              href="https://www.coursera.org/articles/types-programming-language"
+            >
+              https://www.coursera.org/articles/types-programming-language
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   );

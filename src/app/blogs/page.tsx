@@ -1,5 +1,6 @@
 "use client";
 import {
+  ArtificialIntelligence,
   CloudComputing,
   Header,
   ProgrammingLanguages,
@@ -35,6 +36,7 @@ const Blogs = () => {
             >
               <h1>Blogs</h1>
             </div>
+            <ArtificialIntelligence />
             <SoftwareEngineering />
             <TheoryOfComputation />
             <CloudComputing />
