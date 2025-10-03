@@ -123,19 +123,19 @@ export const works = [
     title: "in the field of Education",
     projects: [
       {
-        source: "/assets/poster/Tuuri.mn.png",
+        source: "/assets/poster/Tuuri.mn.webp",
         title: "Tuuri.mn",
         purpose: "Digitalize and Revive Mongolian history",
         desc: "Collaborated with a well-known Professor; Made the first local history website; Reached +2k students in Mongolia; Created flexible dynamic website using NextJS, PixiJS, and Contentful",
       },
       {
-        source: "/assets/poster/Vici.Mag.png",
+        source: "/assets/poster/Vici.Mag.webp",
         title: "Vici.Mag",
         purpose: "Provide opportunities and knowledge to Mongolian students",
         desc: "Helped 1k+ students worldwide struggling with college apps by providing blogs, interviews, articles; Created multi-language website, led 4 developers, developed using GatsbyJS and Contentful",
       },
       {
-        source: "/assets/poster/KnowShare.png",
+        source: "/assets/poster/KnowShare.webp",
         title: "KnowShare",
         purpose: "Student engagement platform",
         desc: "Led a team of 4 students to make student platform that is categorized by lessons. Built in post and comment features. I have integrated database with efficient reading system pagination.",
@@ -146,13 +146,13 @@ export const works = [
     title: "in Health",
     projects: [
       {
-        source: "/assets/poster/HelloLady.png",
+        source: "/assets/poster/HelloLady.webp",
         title: "HelloLady",
         purpose: "Women's healthcare application",
         desc: "Conducted a research on women's preiod & ovulation; created an algorithm for the tracking; developed additional healthcare application",
       },
       {
-        source: "/assets/poster/WeCare.png",
+        source: "/assets/poster/WeCare.webp",
         title: "WeCare",
         purpose: "Make blood donation easier",
         desc: "Implemented a donation process with a timer, authentication, database, and multiple screens - FAQ, Calendar, Home",
@@ -163,13 +163,13 @@ export const works = [
     title: "for the Public",
     projects: [
       {
-        source: "/assets/poster/RideShare.png",
+        source: "/assets/poster/RideShare.webp",
         title: "RideShare",
         purpose: "Application to reduce transportation cost",
         desc: "Made for the +12k employees of 'MCS Group', A Mongolia's Largest Group Company. Designed & developed the initial version. Uses Realtime location tracking with socket. Made with ReactNative and Firebase.",
       },
       {
-        source: "/assets/poster/DevSummit.png",
+        source: "/assets/poster/DevSummit.webp",
         title: "DevSummit",
         purpose:
           "Bridge between local developer and developers around the world",

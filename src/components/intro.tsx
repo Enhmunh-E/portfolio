@@ -16,7 +16,7 @@ export const Intro = () => {
           <div className="w-60 h-60 aspect-square relative lg:hidden">
             <img
               className="w-60 h-60 object-cover object-top absolute z-10 lg:h-80 lg:w-80"
-              src="/assets/me.JPG"
+              src="/assets/me.webp"
             />
             <div>
               <img src="profile-back.svg" className="absolute scale-150" />
@@ -59,7 +59,7 @@ export const Intro = () => {
           <div className="w-60 h-60 aspect-square relative translate-y-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2  lg:h-80 lg:w-80">
             <img
               className="w-60 h-60 object-cover object-top absolute z-10 lg:h-80 lg:w-80"
-              src="/assets/me.JPG"
+              src="/assets/me.webp"
             />
             <div>
               <img src="profile-back.svg" className="absolute scale-150" />
